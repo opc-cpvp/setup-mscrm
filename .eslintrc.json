@@ -1,0 +1,23 @@
+{
+    "plugins": ["@typescript-eslint", "prettier", "github"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:github/typescript", 
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 9,
+      "sourceType": "module",
+      "project": "./tsconfig.json"
+    },
+    "rules": {
+        "prettier/prettier": "error"
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    }
+  }
